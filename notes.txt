@@ -2,3 +2,21 @@
 -copied over into a data folder in the ubuntu side
 
 -make sure I know what the file type is so I'm getting the right library
+
+-Actually easier to create a country list, loop through, look for instances of the country, and then write those
+    -countries is a global variable
+    -if the country exists, we append the new yarn column
+    -if the country doesn't exist, it creates a country as it goes
+
+-start as JSON object, then build a CSV at the end
+
+{
+    "country":"USA",
+    "yarns": [
+        {"name":"yarn1",
+        "tradeValue": "333",
+        "type": "yarn"}
+    ]
+}
+
+-write a rule for setting the types
