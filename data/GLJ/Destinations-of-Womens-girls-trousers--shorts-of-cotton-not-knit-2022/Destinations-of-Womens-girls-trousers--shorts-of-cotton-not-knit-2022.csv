@@ -1,0 +1,35 @@
+"Continent ID","Continent","Country ID","Country","ISO 3","Trade Value"
+"af","Africa","afmar","Morocco","mar",25798
+"as","Asia","asarm","Armenia","arm",32028
+"as","Asia","asaze","Azerbaijan","aze",25
+"as","Asia","askaz","Kazakhstan","kaz",67152
+"as","Asia","askgz","Kyrgyzstan","kgz",871496.0000000001
+"as","Asia","askwt","Kuwait","kwt",1396.9999999999998
+"as","Asia","aslbn","Lebanon","lbn",1639
+"as","Asia","asmng","Mongolia","mng",35
+"as","Asia","astjk","Tajikistan","tjk",33
+"as","Asia","astur","Turkey","tur",319368
+"eu","Europe","euand","Andorra","and",486
+"eu","Europe","euaut","Austria","aut",285
+"eu","Europe","eubgr","Bulgaria","bgr",2168
+"eu","Europe","eubih","Bosnia and Herzegovina","bih",2913.9999999999995
+"eu","Europe","eublr","Belarus","blr",33568.00000000001
+"eu","Europe","euche","Switzerland","che",217
+"eu","Europe","eucze","Czechia","cze",8073
+"eu","Europe","eudeu","Germany","deu",32353
+"eu","Europe","euesp","Spain","esp",755.9999999999999
+"eu","Europe","euhrv","Croatia","hrv",74.00000000000001
+"eu","Europe","eultu","Lithuania","ltu",234
+"eu","Europe","eumda","Moldova","mda",94949
+"eu","Europe","eumkd","North Macedonia","mkd",2039.0000000000002
+"eu","Europe","eumlt","Malta","mlt",2
+"eu","Europe","eumne","Montenegro","mne",81
+"eu","Europe","eunld","Netherlands","nld",1160
+"eu","Europe","eupol","Poland","pol",42452
+"eu","Europe","euprt","Portugal","prt",1127
+"eu","Europe","eurus","Russia","rus",7279148
+"eu","Europe","eusrb","Serbia","srb",2907
+"eu","Europe","euukr","Ukraine","ukr",143103.99999999997
+"na","North America","nacan","Canada","can",920
+"na","North America","nausa","United States","usa",799
+"sa","South America","saecu","Ecuador","ecu",143.00000000000003

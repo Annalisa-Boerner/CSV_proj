@@ -1,0 +1,60 @@
+"Continent ID","Continent","Country ID","Country","ISO 3","Trade Value"
+"af","Africa","afbwa","Botswana","bwa",11.000000000000002
+"af","Africa","afcmr","Cameroon","cmr",630
+"af","Africa","afegy","Egypt","egy",14670
+"af","Africa","afmar","Morocco","mar",4861.000000000001
+"as","Asia","asare","United Arab Emirates","are",28603
+"as","Asia","asarm","Armenia","arm",165861
+"as","Asia","asaze","Azerbaijan","aze",197964.00000000003
+"as","Asia","asbhr","Bahrain","bhr",3755
+"as","Asia","aschn","China","chn",1499
+"as","Asia","asgeo","Georgia","geo",774
+"as","Asia","asidn","Indonesia","idn",1353.0000000000002
+"as","Asia","asisr","Israel","isr",1568672
+"as","Asia","askaz","Kazakhstan","kaz",8600608
+"as","Asia","askgz","Kyrgyzstan","kgz",68491146
+"as","Asia","askor","South Korea","kor",8238.999999999998
+"as","Asia","askwt","Kuwait","kwt",1222
+"as","Asia","aslbn","Lebanon","lbn",47477
+"as","Asia","asmng","Mongolia","mng",6337.999999999999
+"as","Asia","assgp","Singapore","sgp",210
+"as","Asia","astjk","Tajikistan","tjk",927043
+"as","Asia","astkm","Turkmenistan","tkm",13894
+"as","Asia","astur","Turkey","tur",1604764
+"as","Asia","asxxb","Chinese Taipei",,436
+"eu","Europe","euaut","Austria","aut",218
+"eu","Europe","eubgr","Bulgaria","bgr",37317
+"eu","Europe","eubih","Bosnia and Herzegovina","bih",97762.99999999999
+"eu","Europe","eublr","Belarus","blr",745395
+"eu","Europe","euche","Switzerland","che",4692
+"eu","Europe","eucze","Czechia","cze",513903
+"eu","Europe","eudeu","Germany","deu",587405
+"eu","Europe","eufin","Finland","fin",156
+"eu","Europe","eufra","France","fra",584
+"eu","Europe","eugbr","United Kingdom","gbr",356103
+"eu","Europe","eugrc","Greece","grc",60122
+"eu","Europe","euhrv","Croatia","hrv",2981.9999999999995
+"eu","Europe","euirl","Ireland","irl",5881
+"eu","Europe","euita","Italy","ita",1288716.0000000002
+"eu","Europe","eultu","Lithuania","ltu",53062
+"eu","Europe","eulux","Luxembourg","lux",31781.999999999996
+"eu","Europe","eulva","Latvia","lva",780751.0000000001
+"eu","Europe","eumda","Moldova","mda",788223.0000000001
+"eu","Europe","eumkd","North Macedonia","mkd",47701
+"eu","Europe","eumlt","Malta","mlt",196
+"eu","Europe","eumne","Montenegro","mne",5392
+"eu","Europe","eunld","Netherlands","nld",1634.0000000000002
+"eu","Europe","eunor","Norway","nor",145
+"eu","Europe","eupol","Poland","pol",196500
+"eu","Europe","euprt","Portugal","prt",10085
+"eu","Europe","eurou","Romania","rou",88886.00000000001
+"eu","Europe","eurus","Russia","rus",164016874
+"eu","Europe","eusrb","Serbia","srb",80880
+"eu","Europe","eusvk","Slovakia","svk",4053.9999999999995
+"eu","Europe","eusvn","Slovenia","svn",1153
+"eu","Europe","euswe","Sweden","swe",198
+"eu","Europe","euukr","Ukraine","ukr",1554818
+"na","North America","nacan","Canada","can",9340
+"na","North America","nausa","United States","usa",101930
+"sa","South America","saecu","Ecuador","ecu",468
+"sa","South America","saper","Peru","per",5381

@@ -1,0 +1,26 @@
+"Continent ID","Continent","Country ID","Country","ISO 3","Trade Value"
+"as","Asia","asafg","Afghanistan","afg",324
+"as","Asia","asarm","Armenia","arm",29103
+"as","Asia","asaze","Azerbaijan","aze",87923.99999999999
+"as","Asia","aschn","China","chn",103.00000000000001
+"as","Asia","askaz","Kazakhstan","kaz",2364422
+"as","Asia","askgz","Kyrgyzstan","kgz",11647708
+"as","Asia","askwt","Kuwait","kwt",2217
+"as","Asia","aslbn","Lebanon","lbn",117
+"as","Asia","asmys","Malaysia","mys",3160
+"as","Asia","astjk","Tajikistan","tjk",253535
+"as","Asia","astkm","Turkmenistan","tkm",6449
+"as","Asia","astur","Turkey","tur",66
+"eu","Europe","eublr","Belarus","blr",697980
+"eu","Europe","euche","Switzerland","che",1568
+"eu","Europe","eucze","Czechia","cze",3077
+"eu","Europe","eudeu","Germany","deu",1370695
+"eu","Europe","eultu","Lithuania","ltu",99576.00000000001
+"eu","Europe","eulux","Luxembourg","lux",12112
+"eu","Europe","eulva","Latvia","lva",102917
+"eu","Europe","eumda","Moldova","mda",1256543.0000000002
+"eu","Europe","eumlt","Malta","mlt",5
+"eu","Europe","eupol","Poland","pol",94
+"eu","Europe","eurou","Romania","rou",30253
+"eu","Europe","eurus","Russia","rus",30736857.000000004
+"eu","Europe","euukr","Ukraine","ukr",147049

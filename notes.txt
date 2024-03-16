@@ -1,0 +1,4 @@
+-couldn't access data on the windows side bc path didn't exist
+-copied over into a data folder in the ubuntu side
+
+-make sure I know what the file type is so I'm getting the right library

@@ -1,0 +1,40 @@
+"Continent ID","Continent","Country ID","Country","ISO 3","Trade Value"
+"af","Africa","afmar","Morocco","mar",587.0000000000001
+"af","Africa","aftun","Tunisia","tun",239213
+"as","Asia","asarm","Armenia","arm",1464846
+"as","Asia","asbgd","Bangladesh","bgd",1267360
+"as","Asia","aschn","China","chn",50665629
+"as","Asia","asgeo","Georgia","geo",10892.000000000002
+"as","Asia","asirn","Iran","irn",2367542
+"as","Asia","asjpn","Japan","jpn",212067.99999999997
+"as","Asia","askaz","Kazakhstan","kaz",934735
+"as","Asia","askgz","Kyrgyzstan","kgz",34195
+"as","Asia","askor","South Korea","kor",341815
+"as","Asia","aspak","Pakistan","pak",1981502.0000000002
+"as","Asia","assgp","Singapore","sgp",51008
+"as","Asia","astkm","Turkmenistan","tkm",107574
+"as","Asia","astur","Turkey","tur",93803584
+"eu","Europe","euaut","Austria","aut",210271
+"eu","Europe","eubel","Belgium","bel",895378
+"eu","Europe","eubgr","Bulgaria","bgr",571390
+"eu","Europe","eublr","Belarus","blr",4124252.9999999995
+"eu","Europe","eucze","Czechia","cze",383263.00000000006
+"eu","Europe","eudeu","Germany","deu",3530481
+"eu","Europe","eugrc","Greece","grc",82728
+"eu","Europe","euita","Italy","ita",428730
+"eu","Europe","eultu","Lithuania","ltu",739822
+"eu","Europe","eulva","Latvia","lva",70210
+"eu","Europe","eumkd","North Macedonia","mkd",251787.99999999997
+"eu","Europe","eupol","Poland","pol",11759558
+"eu","Europe","euprt","Portugal","prt",524013.00000000006
+"eu","Europe","eurou","Romania","rou",149525
+"eu","Europe","eurus","Russia","rus",162388516
+"eu","Europe","eusrb","Serbia","srb",8411
+"eu","Europe","eusvk","Slovakia","svk",42075
+"eu","Europe","eusvn","Slovenia","svn",31918.000000000004
+"eu","Europe","euukr","Ukraine","ukr",3404613
+"na","North America","nacan","Canada","can",254743
+"na","North America","nagtm","Guatemala","gtm",223856
+"na","North America","nausa","United States","usa",10530
+"sa","South America","sacol","Colombia","col",124728
+"sa","South America","saper","Peru","per",127160

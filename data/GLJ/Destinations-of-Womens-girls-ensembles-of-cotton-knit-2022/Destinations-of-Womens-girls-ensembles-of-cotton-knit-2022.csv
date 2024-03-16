@@ -1,0 +1,19 @@
+"Continent ID","Continent","Country ID","Country","ISO 3","Trade Value"
+"af","Africa","afmar","Morocco","mar",235
+"as","Asia","asare","United Arab Emirates","are",708
+"as","Asia","asarm","Armenia","arm",3316.0000000000005
+"as","Asia","asaze","Azerbaijan","aze",62558
+"as","Asia","asisr","Israel","isr",378926.99999999994
+"as","Asia","askaz","Kazakhstan","kaz",181995
+"as","Asia","askgz","Kyrgyzstan","kgz",1034111.0000000001
+"as","Asia","asmng","Mongolia","mng",442.99999999999994
+"as","Asia","astjk","Tajikistan","tjk",486
+"as","Asia","astur","Turkey","tur",84084
+"eu","Europe","eublr","Belarus","blr",1140647
+"eu","Europe","eugrc","Greece","grc",32360.999999999996
+"eu","Europe","eultu","Lithuania","ltu",879
+"eu","Europe","eulva","Latvia","lva",28.999999999999996
+"eu","Europe","eumda","Moldova","mda",48855
+"eu","Europe","eurus","Russia","rus",2585802
+"eu","Europe","euukr","Ukraine","ukr",81418
+"na","North America","nausa","United States","usa",2326

@@ -1,0 +1,45 @@
+"Continent ID","Continent","Country ID","Country","ISO 3","Trade Value"
+"af","Africa","afmar","Morocco","mar",4234
+"as","Asia","asare","United Arab Emirates","are",5518
+"as","Asia","asarm","Armenia","arm",72901.00000000001
+"as","Asia","asaze","Azerbaijan","aze",26493.000000000004
+"as","Asia","asbhr","Bahrain","bhr",2332
+"as","Asia","aschn","China","chn",381
+"as","Asia","asgeo","Georgia","geo",844.0000000000001
+"as","Asia","asidn","Indonesia","idn",165
+"as","Asia","askaz","Kazakhstan","kaz",692423
+"as","Asia","askgz","Kyrgyzstan","kgz",3265137
+"as","Asia","askwt","Kuwait","kwt",1188
+"as","Asia","asmng","Mongolia","mng",237
+"as","Asia","astha","Thailand","tha",1002.9999999999999
+"as","Asia","astjk","Tajikistan","tjk",101213
+"as","Asia","astkm","Turkmenistan","tkm",8286
+"as","Asia","astur","Turkey","tur",1725174
+"eu","Europe","eubgr","Bulgaria","bgr",13161
+"eu","Europe","eubih","Bosnia and Herzegovina","bih",48407
+"eu","Europe","eublr","Belarus","blr",1176369
+"eu","Europe","euche","Switzerland","che",890.9999999999999
+"eu","Europe","eucze","Czechia","cze",88465
+"eu","Europe","eudeu","Germany","deu",52481
+"eu","Europe","euest","Estonia","est",1
+"eu","Europe","eugbr","United Kingdom","gbr",26.000000000000004
+"eu","Europe","eugrc","Greece","grc",102819
+"eu","Europe","euhrv","Croatia","hrv",2508
+"eu","Europe","euita","Italy","ita",138777.00000000003
+"eu","Europe","eultu","Lithuania","ltu",4018
+"eu","Europe","eulva","Latvia","lva",21854
+"eu","Europe","eumda","Moldova","mda",461532
+"eu","Europe","eumkd","North Macedonia","mkd",26950
+"eu","Europe","eumlt","Malta","mlt",71
+"eu","Europe","eumne","Montenegro","mne",1835.9999999999998
+"eu","Europe","eunld","Netherlands","nld",27.000000000000004
+"eu","Europe","eupol","Poland","pol",30452
+"eu","Europe","euprt","Portugal","prt",35103
+"eu","Europe","eurou","Romania","rou",70014
+"eu","Europe","eurus","Russia","rus",35238115
+"eu","Europe","eusrb","Serbia","srb",57431.00000000001
+"eu","Europe","euukr","Ukraine","ukr",185715.99999999997
+"na","North America","nacan","Canada","can",26049
+"na","North America","nausa","United States","usa",54474
+"sa","South America","saecu","Ecuador","ecu",302
+"sa","South America","saper","Peru","per",705
