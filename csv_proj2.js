@@ -55,10 +55,11 @@ const countries = new Set();
             //Get country csv data
             // console.log("csvData", csvData);
             const countryCsvData = csvData.data.filter((datum) => {
-                return (datum.Country = country.Name);
+                return datum.Country == country.Name;
             });
             const finalFileName = path.basename(csvData.filePath);
-            if (countryCsvData) {
+            // console.log("countryCsvData", countryCsvData);
+            if (countryCsvData.length > 0) {
                 country.TradeValues[finalFileName] =
                     countryCsvData[0]["Trade Value"];
             } else {
