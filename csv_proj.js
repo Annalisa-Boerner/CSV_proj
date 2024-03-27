@@ -13,10 +13,11 @@ const fileName = "Destinations-of-Silk-2022.csv";
 // Path to Excel file
 const filePath = path.join(directoryName, fileName);
 
-console.log("filepath", filePath);
+// console.log("filepath", filePath);
 
 //Global countries variable to be populated as we loop through
 const countries = [];
+const fileList = [];
 
 //loop through all of the directories
 const getAllFiles = (parentDirectoryPath, checkForDirectory) => {
@@ -34,13 +35,17 @@ const getAllFiles = (parentDirectoryPath, checkForDirectory) => {
                 //locate the csv file in the folder
             } else if (!checkForDirectory) {
                 if (filePath.endsWith(".csv")) {
-                    console.log("File name:", filePath);
+                    // console.log("File name:", filePath);
+                    fileList.push(filePath);
+                    console.log("fileList line 38", fileList);
                 }
             }
         });
     });
+    return fileList;
 };
 getAllFiles(parentDirectoryPath, true);
+console.log("fileList", fileList);
 
 fs.createReadStream(filePath)
     .pipe(csv())
