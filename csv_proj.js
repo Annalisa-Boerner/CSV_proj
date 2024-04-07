@@ -1,3 +1,4 @@
+//file system package
 const fs = require("fs");
 const csv = require("csv-parser");
 const path = require("path");
@@ -37,7 +38,7 @@ const getAllFiles = (parentDirectoryPath, checkForDirectory) => {
                 if (filePath.endsWith(".csv")) {
                     // console.log("File name:", filePath);
                     fileList.push(filePath);
-                    console.log("fileList line 38", fileList);
+                    // console.log("fileList line 38", fileList);
                 }
             }
         });
@@ -47,12 +48,15 @@ const getAllFiles = (parentDirectoryPath, checkForDirectory) => {
 getAllFiles(parentDirectoryPath, true);
 console.log("fileList", fileList);
 
-fs.createReadStream(filePath)
-    .pipe(csv())
-    .on("data", (data) => results.push(data))
-    .on("end", () => {
-        //Countries: [ {country: Kenya}, {country: USA} ]
-    });
-
+const readCsvFile = (filePath) => {
+    fs.createReadStream(filePath)
+        .pipe(csv())
+        .on("data", (data) => results.push(data))
+        .on("end", () => {
+            // console.log(results);
+            //Countries: [ {country: Kenya}, {country: USA} ]
+        });
+};
+readCsvFile(filePath);
 //CSV target for write at the end
 const newFilePath = "/root/csv_proj/data/aggregatedFigures1.csv";

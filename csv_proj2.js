@@ -32,44 +32,7 @@ const getAllFiles = async (parentDirectoryPath, checkForDirectory) => {
 //adds to a list but eliminates duplicates
 const countries = new Set();
 
-(async () => {
-    await getAllFiles(parentDirectoryPath, true);
-    const csvDataList = [];
-
-    for (const filePath of fileList) {
-        try {
-            const csvData = await readCsvs(filePath);
-            // console.log("csvData", csvData);
-            csvDataList.push({ data: csvData, filePath: filePath });
-
-            csvData.forEach((datum) => {
-                countries.add({ Name: datum.Country, TradeValues: {} });
-            });
-        } catch (error) {
-            console.error("Error reading CSV:", error);
-        }
-    }
-
-    for (const csvData of csvDataList) {
-        for (const country of countries) {
-            //Get country csv data
-            // console.log("csvData", csvData);
-            const countryCsvData = csvData.data.filter((datum) => {
-                return datum.Country == country.Name;
-            });
-            const finalFileName = path.basename(csvData.filePath);
-            // console.log("countryCsvData", countryCsvData);
-            if (countryCsvData.length > 0) {
-                country.TradeValues[finalFileName] =
-                    countryCsvData[0]["Trade Value"];
-            } else {
-                country.TradeValues[finalFileName] = null;
-            }
-        }
-    }
-    console.log("countires line 66", countries);
-})();
-
+//function to read files and return the data in a useable format
 const readCsvs = (filePath) => {
     return new Promise((resolve, reject) => {
         let currentResults = [];
@@ -82,5 +45,69 @@ const readCsvs = (filePath) => {
             .on("error", (error) => {
                 reject(error);
             });
+    });
+};
+
+(async () => {
+    await getAllFiles(parentDirectoryPath, true);
+    const csvContentsAndFilenames = [];
+
+    //loop through csv files; for each, append the names of the countires within to the countries list (set prevents duplicates)
+    for (const filePath of fileList) {
+        try {
+            //storing csv data for later
+            const csvFileData = await readCsvs(filePath);
+
+            // console.log("csvData", csvData);
+            csvContentsAndFilenames.push({
+                data: csvFileData,
+                filePath: filePath,
+            });
+
+            //extract the country column from the csv file
+            csvFileData.forEach((entry) => {
+                countries.add({ Name: entry.Country, TradeValues: {} });
+            });
+        } catch (error) {
+            console.error("Error reading CSV:", error);
+        }
+    }
+    // console.log("csvDataList:", csvDataList[0]);
+
+    //loop through each file with its data
+    for (const csvFileDataPlusName of csvContentsAndFilenames) {
+        //inside a file, loop through the countries to build the trade values object based on the instance of the country happening in the file; make sure each country inherits each file name so the keys are the same for every country
+        //record null if it doesn't exist so that each country has an entry in each file (good for Excel columns)
+        for (const country of countries) {
+            //Get individual country's row in the csv data: for  Kenya, loop through and find the row in this file that includes Kenya; set it to either trade values or null and return
+
+            const countryCsvData = csvFileDataPlusName.data.filter((entry) => {
+                return entry.Country == country.Name;
+            });
+            const finalFileName = path.basename(csvFileDataPlusName.filePath);
+            if (countryCsvData.length > 0) {
+                country.TradeValues[finalFileName] =
+                    countryCsvData[0]["Trade Value"];
+            } else {
+                country.TradeValues[finalFileName] = null;
+            }
+        }
+    }
+    // console.log("countries line 96", countries);
+    const countryArray = [...countries];
+    const jsonCountries = JSON.stringify(countryArray, null, 2);
+    console.log("jsonCountries line 98", jsonCountries);
+    writeDataToFile(jsonCountries, "countries.json");
+})();
+
+//Write to json file
+const writeDataToFile = (jsonCountries, fileName) => {
+    // console.log("jsonCountries", jsonCountries);
+    fs2.writeFile(flieName, jsonCountries, (err) => {
+        if (err) {
+            console.error(err);
+        } else {
+            console.log("file successfully created");
+        }
     });
 };
