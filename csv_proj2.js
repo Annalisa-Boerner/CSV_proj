@@ -96,18 +96,49 @@ const readCsvs = (filePath) => {
     // console.log("countries line 96", countries);
     const countryArray = [...countries];
     const jsonCountries = JSON.stringify(countryArray, null, 2);
-    console.log("jsonCountries line 98", jsonCountries);
+    // console.log("jsonCountries line 98", jsonCountries);
     writeDataToFile(jsonCountries, "countries.json");
+
+    convertJsonToCsv(countryArray);
 })();
 
 //Write to json file
 const writeDataToFile = (jsonCountries, fileName) => {
     // console.log("jsonCountries", jsonCountries);
-    fs2.writeFile(flieName, jsonCountries, (err) => {
+    fs2.writeFile(fileName, jsonCountries, (err) => {
         if (err) {
             console.error(err);
         } else {
             console.log("file successfully created");
         }
     });
+};
+
+const convertJsonToCsv = (jsonArray) => {
+    const rows = [];
+
+    //pull off the keys from the json file to create the header row
+    const fileNameHeaders = Object.keys(jsonArray[0]["TradeValues"]);
+    const headers = ["Name"];
+    conciseFileNameHeaders = fileNameHeaders.map((name) => {
+        return name.replace("Destinations-of-", "").replace("-2022.csv", "");
+    });
+    console.log("concise", conciseFileNameHeaders);
+    let finalHeaders = headers.concat(conciseFileNameHeaders);
+
+    rows.push(finalHeaders.join(","));
+    //loop through json array; build each row for each country
+    for (const country of jsonArray) {
+        let countryRow = [];
+
+        countryRow.push(country.Name);
+        for (const fileNameHeader of fileNameHeaders) {
+            let countryTradeValue = country["TradeValues"][fileNameHeader];
+            countryRow.push(countryTradeValue);
+        }
+        rows.push(countryRow.join(","));
+    }
+    let countryCsv = rows.join("\n");
+    // console.log("countryCsv", countryCsv);
+    writeDataToFile(countryCsv, "countries.csv");
 };
